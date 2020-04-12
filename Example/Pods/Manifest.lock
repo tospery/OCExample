@@ -1,0 +1,16 @@
+PODS:
+  - OCExample (1.0.0)
+
+DEPENDENCIES:
+  - OCExample (from `../`)
+
+EXTERNAL SOURCES:
+  OCExample:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OCExample: b07a791866a309e5f522829b246b6673236c7148
+
+PODFILE CHECKSUM: 4734a06a22d713b021f087b27ed3b3ba84d8ea66
+
+COCOAPODS: 1.9.1

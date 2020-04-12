@@ -1,0 +1,6 @@
+framework module OCExample {
+  umbrella header "OCExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
