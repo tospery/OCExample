@@ -1,15 +1,24 @@
 PODS:
-  - OCExample (1.0.0)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - OCExample (1.0.1):
+    - Mantle (= 2.1.0)
 
 DEPENDENCIES:
   - OCExample (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Mantle
 
 EXTERNAL SOURCES:
   OCExample:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OCExample: b07a791866a309e5f522829b246b6673236c7148
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  OCExample: e8990e477bed32a0af402a6de27e4028b8409570
 
 PODFILE CHECKSUM: 4734a06a22d713b021f087b27ed3b3ba84d8ea66
 

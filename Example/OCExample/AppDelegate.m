@@ -1,18 +1,29 @@
 //
-//  OCEAppDelegate.m
+//  AppDelegate.m
 //  OCExample
 //
-//  Created by tospery on 04/13/2020.
-//  Copyright (c) 2020 tospery. All rights reserved.
+//  Created by tospery on 12/29/2019.
+//  Copyright (c) 2019 tospery. All rights reserved.
 //
 
-#import "OCEAppDelegate.h"
+#import "AppDelegate.h"
+#import "HomeViewController.h"
 
-@implementation OCEAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
+    UINavigationController *homeNC = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    self.window.rootViewController = homeNC;
+    [self.window makeKeyAndVisible];
+    
+    [UINavigationBar appearance].translucent = NO;
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].barTintColor = [UIColor orangeColor];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:17]};
+    
     return YES;
 }
 
@@ -41,6 +52,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+        _window.backgroundColor = UIColor.whiteColor;
+    }
+    return _window;
 }
 
 @end

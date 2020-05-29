@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Test（测试）",
+        "forward":"DemoViewController",
+        "params":{
+            "ref": "https://www.baidu.com/"
+        }
+    },
+    {
+        "name":"打印log",
+        "forward":"print",
+        "params":{
+            "word":"您好，世界！！！"
+        }
+    }
+]
+
+
+
